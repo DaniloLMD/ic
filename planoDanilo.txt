@@ -1,0 +1,46 @@
+﻿Titulo
+Implementação de algoritmos para geração de árvores de extensão mínima e caminho mínimo em grafos ponderados e dinâmicos para compor uma ferramenta de algoritmos em grafos web
+
+Introdução e Justificativa
+
+A teoria dos grafos desempenha um papel crucial no entendimento das relações entre elementos e na modelagem de uma variedade de problemas práticos. Os grafos têm sido amplamente aplicados em campos como redes de comunicação e otimização de rotas. Uma das áreas de estudo fundamentais em teoria dos grafos é a busca por distâncias mínimas em grafos ponderados e dinâmicos e a geração de árvores de extensão mínima.
+
+Um grafo ponderado é uma estrutura matemática representada por um par ordenado G = (V, E), onde V é o conjunto de vértices e E é o conjunto de arestas. Cada aresta “e” em E é associada a um peso w(e), que é um valor numérico real. Esses pesos representam alguma medida quantitativa, como distância, tempo ou custo financeiro. Essa atribuição de pesos permite a modelagem de problemas reais, como determinar a menor distância entre duas cidades.
+
+Uma árvore de extensão mínima (Minimum Spanning Tree - MST) de um grafo ponderado G é um subgrafo T que é uma árvore (conexo e acíclico) e que abrange todos os vértices de G, com o menor peso total possível. Elas são estruturas essenciais em muitas aplicações práticas, como redes de comunicação e distribuição de recursos.  
+
+Um grafo dinâmico é um tipo de grafo que pode sofrer alterações ao longo do tempo, com a adição ou remoção de vértices e arestas. Essas mudanças podem ocorrer de forma frequente e arbitrária, o que significa que a estrutura do grafo pode ser modificada em resposta a eventos ou condições específicas. Essa capacidade de alteração torna os grafos dinâmicos adequados para modelar sistemas ou redes que evoluem com o tempo, como redes sociais, redes de comunicação, sistemas de transporte, entre outros. A análise de grafos dinâmicos envolve o estudo das propriedades e comportamentos do grafo ao longo do tempo, incluindo a manutenção de propriedades estruturais e a adaptação de algoritmos para lidar com as mudanças na estrutura do grafo.
+
+Assim como em outras áreas da teoria dos grafos, a disponibilidade de ferramentas computacionais eficientes para resolver problemas relacionados a árvores de extensão mínima e distâncias mínimas é crucial. Tais ferramentas permitem a geração, visualização e solução de problemas em grafos de forma eficiente, facilitando a análise e a resolução de problemas complexos.
+
+Objetivos
+Este trabalho visa ampliar a ferramenta “Graph Problems” que serve para visualização, resolução de problemas e geração de grafos [7]. Tal ferramenta foi concebida durante a dissertação de mestrado [8] do aluno Braully Rocha da Silva, que atualmente é aluno de doutorado em Ciência da Computação no Instituto de Informática da UFG. A ferramenta já se mostrou útil para obtenção
+de resultados prévios que foram utilizados em pelo menos 2 artigos científicos. Nesta Iniciação Científica propomos a implementação de algoritmos para geração de árvores de extensão mínima, além de algoritmos para os problemas da distância mínima em grafos ponderados e dinâmicos. Tais implementações não estão presentes na ferramenta "Graph Problems" e podem auxiliar na resolução de aplicações e estudos acadêmicos. Essas classes e problemas são bastante estudados na literatura conforme pode ser visto em [1,2,3,4,6], a classe dos grafos cúbicos possui reconhecimento de tempo polinomial.
+
+Metodologia
+
+A ferramenta web denominada “Graph Problems” [7] foi desenvolvida para visualizar e resolver determinadas instâncias de problemas estudados pelo grupo área de teoria dos grafos do INF/UFG. Neste sentido, visa contribuir com a obtenção de resultados parciais empíricos que podem servir como ideia para demonstrações. A ferramenta atualmente está hospedada em um servidor gratuito e um servidor do INF/UFG e começou a ser desenvolvida por um aluno do mestrado em Ciências da Computação do INF/UFG. Já foi amplamente testada nos dois problemas que já foram implementados e para algumas classes de grafos. Os dois primeiros problemas implementados foram o
+número de carathéodory e o fecho convexo. 
+Dado o interesse do grupo de teoria dos grafos do INF/UFG e a importância dos problemas da árvore de expansão mínima, bem como no interesse nas distâncias mínimas em diversas áreas, incluindo aplicações: sociológicas, em redes sociais, no problema do caixeiro viajante. Pretendemos ampliar o escopo da ferramenta “Graph Problems” com a implementação dos algoritmos descritos.
+Para cumprirmos o plano, seguiremos uma metodologia que envolverá as atividades abaixo:
+• Estudo de alguns conceitos básicos de teoria dos grafos.
+• Estudo dos problemas de geração de árvores de extensão mínima.
+• Estudo e implementação de algoritmos para determinar distância mínima em grafos ponderados.
+• Estudo e implementação de algoritmos para determinar distância mínima em grafos ponderados dinâmicos.
+• Reuniões semanais com o orientador, onde serão apresentados pontos de checagem e verificação do trabalho e também traçadas as metas de curto prazo para alcançar os objetivos e obedecer o cronograma.
+• Exposição de seminários, que serão úteis para verificar a aprendizagem dos conceitos básicos, bem como da obtenção dos resultados.
+• Acrescentar e testar as implementações dos algoritmos para geração de classes de grafos na ferramenta “Graph Problems” [7].
+Semanalmente, será elaborado um texto pelo orientando resumindo o que foi estudado nesse período para discussão por vídeo chamada com o orientador. Esses textos servirão de auxílio para a escrita do relatório final e de um artigo para submissão em congresso da área. O trabalho seguirá alternando frequentemente entre estudar um algoritmo presente num artigo e implementá-lo na ferramenta.Para compreender a ferramenta o orientando irá estudar e implementar alguns básicos em grafos. A referência [1] servirá de base para estudo de problemas mais simples, para
+que o aluno conheça a ferramenta.
+
+Referências
+[1] Bollobás, B. Modern Graph Theory. Springer, 1998.
+[2] Diestel, R. Graph Theory, 2018.
+[3] Bang-Jensen, J., & Gutin, G. Digraphs: Theory, Algorithms and Applications. Springer, 2008.
+[4] Mahdian, M., Peis, B., & Shahrabi, C. A linear-time algorithm for acyclic chromatic index of graphs. Discrete Applied Mathematics, 182, 223-226, 2015.
+[5] Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. Introduction to Algorithms. MIT Press, 2009.
+[6] Chartrand, G., Zhang, P., & Lesniak, L. Graphs & Digraphs (6th ed.). CRC Press, 2010.
+[7] ROCHA, B.; COELHO, E. M. M.; COELHO, H.. Graph Problems, [s.d.]. Disponível em: https://graph-problems-tool.herokuapp.com/. 
+[8] SILVA, B. R. Algoritmos e limites para os números envoltório e de Carathéodory na convexidade P3. 2018. 93 f. Dissertação (Mestrado em Ciência da Computação) - Universidade Federal de Goiás, Goiânia, 2018.
+
+

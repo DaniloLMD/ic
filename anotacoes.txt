@@ -1,0 +1,28 @@
+biblioteca de grafos (java): Jung Graph
+biblioteca para desenhar os grafos na web (visual) : d3js - teoricamente a gente nao precisará usar 
+
+
+
+compilando e rodando o projeto:
+git clone https://github.com/braully/graph-problems-tool.git 
+cd graph graph-problems-tool
+./compile.sh
+./run.sh
+abrir em localhost:5000
+
+-> Os algoritmos em C/C++ estão na branch "Heroku", do dante
+
+
+-> Local dos geradores em java:
+src/main/java/com/github/braully/graph/generator/
+
+-> Local das operações em java:
+src/main/java/com/github/braully/graph/operation/
+
+
+
+**__TAREFA__**:
+Reunião quarta (30/10) tarde
+- Começar a implementação dos algoritmos no site
+- Apresentar o progresso pro hebert
+- Fazer um texto estilo relatório para, no final da ic, juntar tudo e usar como relatório final.
