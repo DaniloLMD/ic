@@ -128,6 +128,7 @@ com/github/braully/graph/CBInaryOperation$FormatGraphParameter.class
 com/github/braully/graph/operation/GraphTmpDetect.class
 com/github/braully/graph/generator/GraphGeneratorCirculant.class
 com/github/braully/graph/generator/AbstractGraphGenerator.class
+com/github/braully/graph/operation/FordFulkerson.class
 com/github/braully/graph/WebConsoleAppender.class
 com/github/braully/graph/DatabaseFacade$RecordResultGraph.class
 com/github/braully/graph/UtilResultToDatabase$1.class

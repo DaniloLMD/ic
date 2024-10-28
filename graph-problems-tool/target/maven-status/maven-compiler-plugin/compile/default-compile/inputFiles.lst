@@ -113,6 +113,7 @@
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/util/StrategyEstagnacaoCrescente.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/operation/GraphDensity.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/operation/IGraphOperation.java
+/home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/operation/FordFulkerson.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/operation/GenericGreedy.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/generator/IGraphGenerator.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/UtilGraph.java
