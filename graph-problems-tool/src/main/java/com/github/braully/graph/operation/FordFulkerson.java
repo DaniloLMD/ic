@@ -22,14 +22,15 @@ public class FordFulkerson implements IGraphOperation {
       response.put("ERROR", "Grafo não orientado");
       return response;
     }
-
-    String[] input = graph.getInputData().trim().split(" ");
-    if(input == null){
+    
+    if(graph.getInputData() == null){
         response.put("ERROR", "No input provided");
+        return response;
     }
+    String[] input = graph.getInputData().trim().split(" ");
 
     if(input.length != 2){
-        response.put("ERROR", "Input invalido: digite \"source sink\"");
+        response.put("ERROR", "Input invalido: digite dois inteiros separados por espaço (source sink)");
         return response;
     }
 
@@ -68,11 +69,12 @@ public class FordFulkerson implements IGraphOperation {
       capacity.put(vertex, new HashMap<>());
     }
 
+    int edgeCount = 0;
     for (String edge : graph.getEdgeString().split(",")) {
       String[] nodes = edge.trim().split("-");
-      Integer u = Integer.parseInt(nodes[0]);
-      Integer v = Integer.parseInt(nodes[1]);
-      Integer weight = graph.edgeWeights.get(edge.trim());
+      Integer u = Integer.parseInt(nodes[0].trim());
+      Integer v = Integer.parseInt(nodes[1].trim());
+      Integer weight = graph.edgeWeights.get("" + edgeCount++);
 
       residualGraph.get(u).add(v);
       capacity.get(u).put(v, weight);
@@ -86,11 +88,13 @@ public class FordFulkerson implements IGraphOperation {
       queue.add(source);
       parent.put(source, null);
 
+
       while(!queue.isEmpty()) {
         Integer u = queue.poll();
 
         for (Integer v : residualGraph.get(u)) {
           if (!parent.containsKey(v) && capacity.get(u).get(v) > 0) {
+
             parent.put(v, u);
             if (v.equals(sink)) {
               break;
@@ -98,6 +102,7 @@ public class FordFulkerson implements IGraphOperation {
             queue.add(v);
           }
         }
+
         if (parent.containsKey(sink)) {
           break;
         }
@@ -112,8 +117,9 @@ public class FordFulkerson implements IGraphOperation {
         pathFlow = Math.min(pathFlow, capacity.get(u).get(v));
       }
 
-      for (Integer v = sink; !v.equals(source); v = parent.get(v)) {
-        Integer u = parent.get(v);
+
+    for (Integer v = sink; !v.equals(source); v = parent.get(v)) {
+      Integer u = parent.get(v);
         capacity.get(u).put(v, capacity.get(u).get(v) - pathFlow);
         capacity.get(v).put(u, capacity.get(v).get(u) + pathFlow);
       }
