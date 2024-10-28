@@ -19,7 +19,11 @@ src/main/java/com/github/braully/graph/generator/
 -> Local das operações em java:
 src/main/java/com/github/braully/graph/operation/
 
-
+arquivos importante de grafo:
+WS
+UndirectedTO
+WeightedTO
+DoOperation
 
 **__TAREFA__**:
 Reunião quarta (30/10) tarde
