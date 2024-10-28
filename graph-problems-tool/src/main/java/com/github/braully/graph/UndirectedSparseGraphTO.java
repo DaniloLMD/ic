@@ -20,6 +20,16 @@ import java.util.Set;
  * @author braully
  */
 public class UndirectedSparseGraphTO<V extends Number, E extends Number> extends UndirectedSparseGraph {
+    public Boolean isDirected = false;
+
+    public Boolean getIsDirected(){
+        return isDirected;
+    }
+
+    public void setIsDirected(Boolean isDirected){
+        this.isDirected = isDirected;
+    }
+
     public Map<String, Integer> edgeWeights;
 
     public Collection getWeights() {
@@ -409,5 +419,34 @@ public class UndirectedSparseGraphTO<V extends Number, E extends Number> extends
         }
         addVertex(newVert);
         return newVert;
+    }
+
+    public ArrayList<ArrayList<Integer>> getAdjMatrix(){
+        ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+
+        String edgeString = this.getEdgeString();
+        String[] edges = edgeString != null ? edgeString.trim().split(",") : null;
+
+        for(int i = 0; i < getVertexCount(); i++){
+            adj.add(new ArrayList<>());
+            for(int j = 0; j < getVertexCount(); j++){
+                adj.get(i).add(-1);
+            }
+        }
+
+        for (int i = 0; i < edges.length; i++) {
+            String[] vs = edges[i].split("-");
+            if (vs.length >= 2) {
+                Integer source =  Integer.parseInt(vs[0].trim());
+                Integer target =  Integer.parseInt(vs[1].trim());
+
+                adj.get(source).set(target, target);
+                if(!this.isDirected){
+                    adj.get(target).set(source, source);
+                }
+            }       
+        }
+
+        return adj;
     }
 }

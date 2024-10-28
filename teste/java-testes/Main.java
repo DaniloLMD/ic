@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.util.ArrayList;
 
 public class Main{
     public static void main(String[] args) {
@@ -19,15 +20,33 @@ public class Main{
         //     }
         // }
 
-        Map<Integer, Integer> mp = new HashMap<>();
-        int[] v = new int[5];
+        // Map<Integer, Integer> mp = new HashMap<>();
+        // int[] v = new int[5];
         
-        for(int i = 0; i < 5; i ++){
-            v[i] = i * 10;
-            mp.put(i, i * 10);
+        // for(int i = 0; i < 5; i ++){
+        //     v[i] = i * 10;
+        //     mp.put(i, i * 10);
+        // }
+
+        // System.out.println("mp = " + mp);
+        // System.out.println("v = " + v);
+
+        ArrayList<Integer> v = new ArrayList<>();
+
+        v.add(1);
+        v.add(3);
+        v.add(2);
+
+        ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+
+        for(int i = 0; i < 4; i++){
+            adj.add(new ArrayList<>());
+            for(int j = 0; j < 4; j++){
+                adj.get(i).add(0);
+            }
         }
 
-        System.out.println("mp = " + mp);
-        System.out.println("v = " + v);
+        System.out.println(v);
+        System.out.println(adj);
     }
 };

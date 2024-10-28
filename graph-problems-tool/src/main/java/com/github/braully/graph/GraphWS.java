@@ -263,10 +263,14 @@ public class GraphWS {
     public Map<String, Object> operation(@RequestBody String jsonGraph) {
         Map<String, Object> result = null;
 
+        
+        System.out.println("JSON DO GRAFO = " + jsonGraph + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+
         try {
             ObjectMapper mapper = new ObjectMapper();
             UndirectedSparseGraphTO graph = mapper.readValue(jsonGraph, UndirectedSparseGraphTO.class
             );  
+
 
             IGraphOperation operation = null;
             if (graph != null && operators != null && graph.getOperation() != null) {

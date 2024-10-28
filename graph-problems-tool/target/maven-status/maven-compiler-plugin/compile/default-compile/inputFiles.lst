@@ -8,7 +8,6 @@
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/BatchExecuteOperation.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/operation/GraphCaratheodoryNumberOptm.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/generator/GraphGeneratorChordalCycle.java
-/home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/operation/DaniloWightedGraphNewOperationTest.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/operation/OperationConvexityGraphResult.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/generator/GraphGeneratorRandomGilbert.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/generator/GraphGeneratorCartesianProduct.java
@@ -42,15 +41,16 @@
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/ExecuteOperation.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/generator/GraphGeneratorWheel.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/operation/GraphHullNumber.java
-/home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/generator/WeightedGraph.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/operation/GraphCycleChordlessDetec.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/operation/CCMPanizi.java
+/home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/operation/DaniloDirectedWeightedGraphNewOperationTest.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/operation/GraphTIPDecomp.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/operation/GraphTSSGreedy.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/operation/GraphStatistics.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/generator/GraphGeneratorKP.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/FileUploadController.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/util/PairShort.java
+/home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/generator/DaniloWeightedGraph.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/GraphTO.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/ShowgNative.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/generator/GraphGeneratorCycle.java
@@ -80,6 +80,7 @@
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/generator/GraphGeneratorRandom.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/generator/GraphKneserGenarator.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/operation/Interruptible.java
+/home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/operation/DaniloWeightedGraphNewOperationTest.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/util/ComparatorTrabalhoPorFazer.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/operation/TIPDecomp.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/operation/GraphCycleChordlessDetecHS.java
@@ -91,6 +92,7 @@
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/util/StrategyEstagnacao.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/generator/GraphGeneratorPath.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/util/UtilProccess.java
+/home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/generator/DaniloDirectedWeightedGraph.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/operation/CycleHullCheck.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/com/github/braully/graph/operation/GraphNeighborhoodSet.java
 /home/danilolmd/Desktop/ic/graph-problems-tool/src/main/java/util/StrategyAvoidCollid.java

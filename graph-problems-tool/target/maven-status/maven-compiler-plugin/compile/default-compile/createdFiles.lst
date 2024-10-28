@@ -5,6 +5,7 @@ com/github/braully/graph/operation/GraphTIPDecomp.class
 com/github/braully/graph/UtilResultToDatabase.class
 com/github/braully/graph/operation/GraphCaratheodoryNumberOptm.class
 com/github/braully/graph/generator/GraphG6Generator.class
+com/github/braully/graph/operation/DaniloDirectedWeightedGraphNewOperationTest.class
 util/KeyValue.class
 util/Processamento$1.class
 util/MapCountOpt.class
@@ -17,6 +18,7 @@ com/github/braully/graph/generator/GraphGeneratorGrid.class
 com/github/braully/graph/operation/GraphDensity.class
 com/github/braully/graph/operation/GraphIterationNumberOptm.class
 util/PairShort.class
+com/github/braully/graph/operation/DaniloWeightedGraphNewOperationTest.class
 com/github/braully/graph/DatabaseFacade.class
 com/github/braully/graph/operation/CCMPanizi.class
 com/github/braully/graph/operation/GraphHullNumberOptm.class
@@ -45,11 +47,11 @@ com/github/braully/graph/operation/GraphCaratheodoryHeuristicHybrid.class
 util/PipeGraph.class
 com/github/braully/graph/operation/GreedyDistAndDifDelta.class
 com/github/braully/graph/operation/GreedyDifTotal.class
-com/github/braully/graph/operation/DaniloWightedGraphNewOperationTest.class
 com/github/braully/graph/UtilResultToDatabase$ResultadoLinha.class
 com/github/braully/graph/operation/CycleHullCheck.class
 com/github/braully/graph/operation/GraphCaratheodoryCheckSet.class
 com/github/braully/graph/operation/IGraphOperation.class
+com/github/braully/graph/generator/DaniloDirectedWeightedGraph.class
 com/github/braully/graph/operation/GraphHullSetP3.class
 com/github/braully/graph/UtilCProjects.class
 com/github/braully/graph/CombinationsFacade.class
@@ -78,6 +80,7 @@ com/github/braully/graph/UtilResultMerge$2.class
 util/TrabalhoProcessamento.class
 com/github/braully/graph/generator/GraphGeneratorCompleteBipartite.class
 com/github/braully/graph/IBatchExecute.class
+com/github/braully/graph/generator/DaniloWeightedGraph.class
 com/github/braully/graph/generator/GraphGeneratorPath.class
 com/github/braully/graph/operation/GraphSubgraph.class
 com/github/braully/graph/generator/GraphGeneratorBinaryTree.class
@@ -135,5 +138,4 @@ com/github/braully/graph/generator/GraphGeneratorRandomGilbert.class
 com/github/braully/graph/operation/GraphHullNumber.class
 com/github/braully/graph/BatchExecuteOperation.class
 com/github/braully/graph/UtilResultToDatabase$2.class
-com/github/braully/graph/generator/WeightedGraph.class
 com/github/braully/graph/UtilResultCompare$ResultadoLinha.class
